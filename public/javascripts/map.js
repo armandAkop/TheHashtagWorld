@@ -1,4 +1,4 @@
-var styleArray = [
+var styles = [
 	{
 		featureType: "road",
 		stylers: [{visibility: "off"}]
@@ -36,3 +36,14 @@ var styleArray = [
 		]
 	}
 ]
+
+function initialize() {
+	  var mapOptions = {
+	    zoom: 5,
+	    center: {lat: 34.0500, lng: -118.2500},
+	    styles: styles
+	  };
+	  var map = new google.maps.Map(document.getElementById('map-canvas'),
+	      mapOptions);
+ 
+}
