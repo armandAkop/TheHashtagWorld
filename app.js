@@ -4,8 +4,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var home = require('./lib/routes/index');
+
+// Default environment
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+//config setup
+var config = require(path.join(__dirname, '/config/', process.env.NODE_ENV + '.json'));
 
 var app = express();
 
