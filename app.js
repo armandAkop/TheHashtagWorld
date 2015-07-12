@@ -8,11 +8,11 @@ var home = require('./lib/routes/index');
 
 var app = express();
 
+// Port info
+app.set('port', app.get('port') || 3000);
+
 // Default node env
 process.env.NODE_ENV = app.get('env');
-
-//config setup
-var config = require(path.join(__dirname, '/config/', app.get('env') + '.json'));
 
 // view engine setup
 app.set('views', path.join(__dirname, '/lib/views'));
