@@ -4,8 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var home = require('./lib/routes/index');
-
+var homepageRoutes = require('./lib/routes/index');
 var app = express();
 
 // Port info
@@ -26,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', home);
+app.use('/', homepageRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, callback) {
