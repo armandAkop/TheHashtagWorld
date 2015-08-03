@@ -4,7 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
 var homepageRoutes = require('./lib/routes/index');
+
+// Immediately start crons
+require('./cron/location');
+
 var app = express();
 
 // Port info
