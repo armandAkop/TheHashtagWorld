@@ -18,7 +18,8 @@ redisClient.on('ready', function() {
 
 
 function startTrendsAvailable() {
-	new CronJob('00 32 17 * * *', function() {
+	//12:00 AM
+	new CronJob('00 00 00 * * *', function() {
 	  console.log('Starting twitter ');
 	  _getTrendsAvailable();
 	}, null, true, 'America/Los_Angeles');
@@ -50,7 +51,6 @@ var _getTrendsAvailable = function() {
  **/
 var _cacheTrendLocations = function(trendLocations) {
 	redisClient.set(CacheKeys.Twitter.AVAILABLE_TRENDS, JSON.stringify(trendLocations));
-	redisClient.expire(CacheKeys.Twitter.AVAILABLE_TRENDS, 86400); // Expires in a day
 }
 
 /**
