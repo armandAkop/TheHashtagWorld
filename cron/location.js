@@ -5,6 +5,7 @@ var credentialsConfig = require(path.join(__dirname, '../config/credentials', ap
 var CacheKeys = require('../lib/cache/cacheKeys');
 var Twitter = require('twitter');
 var redisClient = require('redis').createClient();
+var googleAPI = require('../lib/api/googleAPI');
 var TrendLocation = require('../lib/models/trendLocation');
 
 redisClient.on('error', function(err) {
@@ -17,16 +18,16 @@ redisClient.on('ready', function() {
 });
 
 
-function startTrendsAvailable() {
-	//12:00 AM
-	new CronJob('00 00 00 * * *', function() {
-	  console.log('Starting twitter ');
+function trendsAvailableCron() {
+	// 12:00 AM every Sunday
+	new CronJob('00 00 00 * * 0', function() {
+	  console.log('Starting trendsAvailableCron');
 	  _getTrendsAvailable();
 	}, null, true, 'America/Los_Angeles');
 }
 
 function startCrons() {
-	startTrendsAvailable();
+	trendsAvailableCron();
 }
 
 var _getTrendsAvailable = function() {
@@ -39,10 +40,48 @@ var _getTrendsAvailable = function() {
 		if (!err) {
 		     filteredLocations = _filterByLocationType(data, ['Town', 'Country']);
 		     var trendLocationsArr = _buildTrendLocationsArray(filteredLocations);
-			_cacheTrendLocations(trendLocationsArr);
+		  
+		     // Call google place search API for each location, get the lat/lng and store in TrendLocation object
+			 _updateTrendLocation(trendLocationsArr, function(error, updatedLocations) {
+			  	if (!error) {
+			  	  _cacheTrendLocations(updatedLocations);
+			  	}
+			 });
 		}
 
 	});
+}
+
+var _updateTrendLocation = function(locations, callback) {
+	var DELAY_TWO_SECONDS = 2000;
+	var updatedLocations = [];
+
+	var interval = setInterval(function() {
+
+		var loc = locations.shift();
+
+		if (loc != null || loc !== undefined) {
+			googleAPI.placeSearch({query: loc.searchableName}, function(err, data) {				
+				
+				if (err) {
+					clearInterval(interval);
+					callback(err);
+				} else {
+					// Updates TrendLocation object
+					if (data.results.length > 0) {
+						var googleLoc = data.results[0].geometry.location;
+						loc.lat = googleLoc.lat;
+						loc.lng = googleLoc.lng;
+						updatedLocations.push(loc);
+					}
+				}
+
+			});
+		} else {
+			clearInterval(interval); // stop the function from running
+			callback(null, updatedLocations);
+		}
+	}, DELAY_TWO_SECONDS);
 }
 
 /**
