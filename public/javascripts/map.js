@@ -62,6 +62,7 @@ function createMarkerFrom(tweet) {
 		position: latlng,
 		map: map,
 		animation: google.maps.Animation.DROP,
+		icon: '/images/twitter_icon.png',
 		title: 'Hello World'
 	});
 
