@@ -28,7 +28,7 @@ function trendsAvailableCron() {
 }
 
 function searchTweetsCron() {
-	new CronJob('00 42 21 * * *', function() {
+	new CronJob('00 08 15 * * *', function() {
 		console.log('Starting searchTweetsCron');
 		_searchTweets();
 	}, null, true, 'America/Los_Angeles');
@@ -63,8 +63,9 @@ var _getTweets = function(trendLocations, callback) {
 		var loc = trendLocations.shift();
 
 		if (loc) {
-			loc.__proto__ = TrendLocation.prototype;
-			var params = {q: loc.getSearchableTwitterName(), result_type: 'mixed', lang: 'en'};
+			var searchableTwitterName = TrendLocation.prototype.getSearchableTwitterName.call(loc);
+
+			var params = {q: searchableTwitterName, result_type: 'popular', lang: 'en'};
 			console.log("Calling twitter client search tweets");
 			twitterClient.get('search/tweets', params, function(error, twts) {
 				if (!error) {
