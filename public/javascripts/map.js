@@ -9,7 +9,7 @@ var styles = [
 		featureType: "water",
 		stylers: [
 			{ visibility: "on" },
-			{ color: "#05080B" }
+			{ color: "#1F2B38" }
 		]
 	},
 	{
@@ -48,6 +48,32 @@ var map;
  * Global marker array 
  */
 var markers = [];
+
+/**
+ * Global infoWindow to prevent multiple open at the same time
+ */
+var infoWindow;
+
+/**
+ *	Initializes the google map
+ */
+function initialize() {
+	
+	var mapOptions = {
+	    zoom: 3,
+	    center: {lat: 34.0500, lng: -118.2500},
+	    styles: styles
+	};
+	   	
+    map = new google.maps.Map(document.getElementById('map-canvas'),
+	      mapOptions);
+ 	
+	infoWindow = new google.maps.InfoWindow({});
+
+	$(function() { 
+	 	getTweets();
+	 });
+}
 
 
 /**
@@ -98,7 +124,6 @@ function batchAnimate(tweets) {
 		}
 	}
 }
-
 /**
  *	Creates a marker and drops it onto the map after a specified delay
  *	@param {object} tweet - the tweet object to create the marker from and drop on the map
@@ -106,25 +131,18 @@ function batchAnimate(tweets) {
  */
 function drop(tweet, delay) {
 	setTimeout(function() {
-		markers.push(createMarkerFrom(tweet));
-	}, delay);
-}
+		var marker = createMarkerFrom(tweet);
+		
+		var infoWindowContent = ''
+		for (var i = 0; i < tweet.tweets.length; i++) {
+			infoWindowContent += '<p>' + tweet.tweets[i] + '</p>';
+		}
+		
+		marker.addListener('click', function() {
+			infoWindow.setContent(infoWindowContent);
+			infoWindow.open(map, marker);
+		});
 
-/**
- *	Initializes the google map
- */
-function initialize() {
-	
-	  var mapOptions = {
-	    zoom: 3,
-	    center: {lat: 34.0500, lng: -118.2500},
-	    styles: styles
-	  };
-	   	
-	  map = new google.maps.Map(document.getElementById('map-canvas'),
-	      mapOptions);
- 	
-	$(function() { 
-	 	getTweets();
-	 });
+		markers.push(marker);
+	}, delay);
 }
