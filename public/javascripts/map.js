@@ -69,12 +69,53 @@ function initialize() {
 	      mapOptions);
  	
 	infoWindow = new google.maps.InfoWindow({});
+	removeRightMargin();
 
 	$(function() { 
 	 	getTweets();
 	 });
 }
 
+/*
+ * The google.maps.event.addListener() event waits for
+ * the creation of the infowindow HTML structure 'domready'
+ * and before the opening of the infowindow defined styles
+ * are applied.
+ */
+function removeRightMargin () {
+
+	google.maps.event.addListener(infoWindow, 'domready', function() {
+
+	   	// Reference to the DIV which receives the contents of the infowindow using jQuery
+	   	var iwOuter = $('.gm-style-iw');
+
+	   	/* The DIV we want to change is above the .gm-style-iw DIV.
+	    * So, we use jQuery and create a iwBackground variable,
+	    * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+	    */
+	   	var iwBackground = iwOuter.prev();
+
+	   	// Remove the background shadow DIV
+	   	iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+
+	   	// Remove the white background DIV
+	   	iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+	   	// Moves the window left
+	   	iwOuter.parent().parent().css({left: '115px'});
+	   
+	   	// Moves the shadow of the arrow 76px to the left margin 
+	   	iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+
+	   	// Moves the arrow 76px to the left margin 
+		iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+
+		// Changes the desired color for the tail outline.
+		// The outline of the tail is composed of two descendants of div which contains the tail.
+		// The .find('div').children() method refers to all the div which are direct descendants of the previous div.
+		iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
+	});
+}
 
 /**
  *	Creates a marker based off the tweets lat, lng and places it on the map.
@@ -113,6 +154,7 @@ function getTweets() {
  *	@param {object} tweets - the array of tweet objects to be used as markers/marker information.
  */
 function batchAnimate(tweets) {
+	console.log(tweets.length);
 	var BUCKET_COUNT = 20;
 	var batchItemCount = Math.floor(tweets.length / BUCKET_COUNT);
 
@@ -132,12 +174,17 @@ function batchAnimate(tweets) {
 function drop(tweet, delay) {
 	setTimeout(function() {
 		var marker = createMarkerFrom(tweet);
+		var infoWindowContent = '<div class="iw-container">';
 		
-		var infoWindowContent = ''
 		for (var i = 0; i < tweet.tweets.length; i++) {
-			infoWindowContent += '<p>' + tweet.tweets[i] + '</p>';
+			infoWindowContent += '<div class="iw-title">';
+			infoWindowContent +=		'<p">Armand Akopian</p>';
+			infoWindowContent += '</div>';
+			infoWindowContent += 		'<div class="iw-data"><p>' + tweet.tweets[i] + '</p></div>';
 		}
-		
+		infoWindowContent += '<div class="iw-bottom-gradient"></div>';
+		infoWindowContent +='</div>';
+
 		marker.addListener('click', function() {
 			infoWindow.setContent(infoWindowContent);
 			infoWindow.open(map, marker);
