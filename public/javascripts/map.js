@@ -69,7 +69,7 @@ function initialize() {
 	      mapOptions);
  	
 	infoWindow = new google.maps.InfoWindow({});
-	removeRightMargin();
+	styleInfoWindow();
 
 	$(function() { 
 	 	getTweets();
@@ -82,7 +82,7 @@ function initialize() {
  * and before the opening of the infowindow defined styles
  * are applied.
  */
-function removeRightMargin () {
+function styleInfoWindow () {
 
 	google.maps.event.addListener(infoWindow, 'domready', function() {
 
@@ -95,26 +95,57 @@ function removeRightMargin () {
 	    */
 	   	var iwBackground = iwOuter.prev();
 
-	   	// Remove the background shadow DIV
-	   	iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+	   	removeMargin();
+	   	positionTail();
+	   	positionCloseButton();
 
-	   	// Remove the white background DIV
-	   	iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+	   	function removeMargin() {
+		   	// Remove the background shadow DIV
+		   	iwBackground.children(':nth-child(2)').css({'display' : 'none'});
 
-	   	// Moves the window left
-	   	iwOuter.parent().parent().css({left: '115px'});
-	   
-	   	// Moves the shadow of the arrow 76px to the left margin 
-	   	iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+		   	// Remove the white background DIV
+		   	iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+	   	}
 
-	   	// Moves the arrow 76px to the left margin 
-		iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+	   	function positionTail() {
+		   	// Moves the window left
+		   	iwOuter.parent().parent().css({left: '115px'});
+		   
+		   	// Moves the shadow of the arrow 76px to the left margin 
+		   	iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
 
-		// Changes the desired color for the tail outline.
-		// The outline of the tail is composed of two descendants of div which contains the tail.
-		// The .find('div').children() method refers to all the div which are direct descendants of the previous div.
-		iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
+		   	// Moves the arrow 76px to the left margin 
+			iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+
+			// Changes the desired color for the tail outline.
+			// The outline of the tail is composed of two descendants of div which contains the tail.
+			// The .find('div').children() method refers to all the div which are direct descendants of the previous div.
+			iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
+	   		
+	   	}
+
+	   	function positionCloseButton() {
+	   		var iwCloseButton = iwOuter.next();
+
+	   		iwCloseButton.mouseenter(function() {
+	   			$(this).css({opacity: '1'});
+	   		});
+
+	   		// Apply the desired effect to the close button
+			iwCloseButton.css({
+			  right: '29px', top: '-7px', // button repositioning
+			  border: '5px solid #ecf0f1', // increasing button border and new color
+			  'border-radius': '3px', // circular effect
+			  'box-shadow': '0 0 5px #3990B9' // 3D effect to highlight the button
+			});
+
+			iwCloseButton.mouseout(function(){
+			  $(this).css({opacity: '0.7'});
+			});
+	   	}
 	});
+
+
 }
 
 /**
@@ -177,10 +208,12 @@ function drop(tweet, delay) {
 		var infoWindowContent = '<div class="iw-container">';
 		
 		for (var i = 0; i < tweet.tweets.length; i++) {
-			infoWindowContent += '<div class="iw-title">';
-			infoWindowContent +=		'<p">Armand Akopian</p>';
+			infoWindowContent += '<div class="iw-row">';
+			infoWindowContent += 	'<div class="iw-title">';
+			infoWindowContent +=		'<p>Armand Akopian</p>';
+			infoWindowContent += 	'</div>';
+			infoWindowContent += 	'<div class="iw-content"><p>' + tweet.tweets[i] + '</p></div>';
 			infoWindowContent += '</div>';
-			infoWindowContent += 		'<div class="iw-data"><p>' + tweet.tweets[i] + '</p></div>';
 		}
 		infoWindowContent += '<div class="iw-bottom-gradient"></div>';
 		infoWindowContent +='</div>';
@@ -190,6 +223,11 @@ function drop(tweet, delay) {
 			infoWindow.open(map, marker);
 		});
 
+
 		markers.push(marker);
 	}, delay);
+}
+
+function createInfoWindow(params) {
+
 }

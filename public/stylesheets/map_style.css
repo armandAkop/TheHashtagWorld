@@ -1,15 +1,29 @@
+.iw-container {
+	max-height: 275px;
+}
+
+.iw-container .iw-row {
+	margin-bottom: 20px;
+}
+
 .iw-container .iw-title {
-	height: 30px;
-	font-size: 22px;
+	height: 28px;
+	font-size: 18px;
 	font-weight: 400;
-	padding: 10px;
+	padding: 10px 10px 5px;
 	color: white;
 	background-color: #48b5e9;
 	border-radius: 2px 2px 0 0;
 }
 
-.iw-container .iw-data {
-	background-color: red;
+.iw-title p {
+	margin: 0;
+}
+
+.iw-container .iw-content p {
+	background-color: #ecf0f1;
+	margin: 0;
+	padding: 10px 10px 15px;
 }
 
 /* Need to override some of the google map info window css */
@@ -26,8 +40,7 @@
   position: absolute;
   width: 350px;
   height: 10px;
-  margin: 0 auto;
-  bottom: 10px;
+  bottom: 3px;
   right: 16px;
   background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
   background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
