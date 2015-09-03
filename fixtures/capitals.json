@@ -1,0 +1,1706 @@
+[  
+   {  
+      "lat":"32.3668052",
+      "lng":"-86.2999689",
+      "type":"city",
+      "name":"Montgomery, Alabama"
+   },
+   {  
+      "lat":"58.3019444",
+      "lng":"-134.4197222",
+      "type":"city",
+      "name":"Juneau, Alaska"
+   },
+   {  
+      "lat":"33.4483771",
+      "lng":"-112.0740373",
+      "type":"city",
+      "name":"Phoenix, Arizona"
+   },
+   {  
+      "lat":"34.7464809",
+      "lng":"-92.2895948",
+      "type":"city",
+      "name":"Little Rock, Arkansas"
+   },
+   {  
+      "lat":"38.5815719",
+      "lng":"-121.4943996",
+      "type":"city",
+      "name":"Sacramento, California"
+   },
+   {  
+      "lat":"39.7392358",
+      "lng":"-104.990251",
+      "type":"city",
+      "name":"Denver, Colorado"
+   },
+   {  
+      "lat":"41.7637111",
+      "lng":"-72.6850932",
+      "type":"city",
+      "name":"Hartford, Connecticut"
+   },
+   {  
+      "lat":"39.158168",
+      "lng":"-75.5243682",
+      "type":"city",
+      "name":"Dover, Delaware"
+   },
+   {  
+      "lat":"30.4382559",
+      "lng":"-84.2807329",
+      "type":"city",
+      "name":"Tallahassee, Florida"
+   },
+   {  
+      "lat":"33.7489954",
+      "lng":"-84.3879824",
+      "type":"city",
+      "name":"Atlanta, Georgia"
+   },
+   {  
+      "lat":"21.3069444",
+      "lng":"-157.8583333",
+      "type":"city",
+      "name":"Honolulu, Hawaii"
+   },
+   {  
+      "lat":"43.6187102",
+      "lng":"-116.2146068",
+      "type":"city",
+      "name":"Boise, Idaho"
+   },
+   {  
+      "lat":"39.7817213",
+      "lng":"-89.6501481",
+      "type":"city",
+      "name":"Springfield, Illinois"
+   },
+   {  
+      "lat":"39.768403",
+      "lng":"-86.158068",
+      "type":"city",
+      "name":"Indianapolis, Indiana"
+   },
+   {  
+      "lat":"41.6005448",
+      "lng":"-93.6091064",
+      "type":"city",
+      "name":"Des Moines, Iowa"
+   },
+   {  
+      "lat":"39.0558235",
+      "lng":"-95.6890185",
+      "type":"city",
+      "name":"Topeka, Kansas"
+   },
+   {  
+      "lat":"38.2009055",
+      "lng":"-84.8732835",
+      "type":"city",
+      "name":"Frankfort, Kentucky"
+   },
+   {  
+      "lat":"30.4582829",
+      "lng":"-91.1403196",
+      "type":"city",
+      "name":"Baton Rouge, Louisiana"
+   },
+   {  
+      "lat":"44.3106241",
+      "lng":"-69.7794897",
+      "type":"city",
+      "name":"Augusta, Maine"
+   },
+   {  
+      "lat":"38.9784453",
+      "lng":"-76.4921829",
+      "type":"city",
+      "name":"Annapolis, Maryland"
+   },
+   {  
+      "lat":"42.3600825",
+      "lng":"-71.0588801",
+      "type":"city",
+      "name":"Boston, Massachusetts"
+   },
+   {  
+      "lat":"42.732535",
+      "lng":"-84.5555347",
+      "type":"city",
+      "name":"Lansing, Michigan"
+   },
+   {  
+      "lat":"44.9537029",
+      "lng":"-93.0899578",
+      "type":"city",
+      "name":"Saint Paul, Minnesota"
+   },
+   {  
+      "lat":"32.2987573",
+      "lng":"-90.1848103",
+      "type":"city",
+      "name":"Jackson, Mississippi"
+   },
+   {  
+      "lat":"38.5767017",
+      "lng":"-92.1735164",
+      "type":"city",
+      "name":"Jefferson City, Missouri"
+   },
+   {  
+      "lat":"46.5883707",
+      "lng":"-112.0245054",
+      "type":"city",
+      "name":"Helana, Montana"
+   },
+   {  
+      "lat":"40.8257625",
+      "lng":"-96.6851982",
+      "type":"city",
+      "name":"Lincoln, Nebraska"
+   },
+   {  
+      "lat":"39.1637984",
+      "lng":"-119.7674034",
+      "type":"city",
+      "name":"Carson City, Nevada"
+   },
+   {  
+      "lat":"43.2081366",
+      "lng":"-71.5375718",
+      "type":"city",
+      "name":"Concord, New Hampshire"
+   },
+   {  
+      "lat":"40.2170534",
+      "lng":"-74.7429384",
+      "type":"city",
+      "name":"Trenton, New Jersey"
+   },
+   {  
+      "lat":"35.6869752",
+      "lng":"-105.937799",
+      "type":"city",
+      "name":"Santa Fe, New Mexico"
+   },
+   {  
+      "lat":"42.6525793",
+      "lng":"-73.7562317",
+      "type":"city",
+      "name":"Albany, New York"
+   },
+   {  
+      "lat":"35.7795897",
+      "lng":"-78.6381787",
+      "type":"city",
+      "name":"Raleigh, North Carolina"
+   },
+   {  
+      "lat":"46.8083268",
+      "lng":"-100.7837392",
+      "type":"city",
+      "name":"Bismarck, North Dakota"
+   },
+   {  
+      "lat":"39.9611755",
+      "lng":"-82.9987942",
+      "type":"city",
+      "name":"Columbus, Ohio"
+   },
+   {  
+      "lat":"35.4675602",
+      "lng":"-97.5164276",
+      "type":"city",
+      "name":"Oklahoma City, Oklahoma"
+   },
+   {  
+      "lat":"44.9428975",
+      "lng":"-123.0350963",
+      "type":"city",
+      "name":"Salem, Oregon"
+   },
+   {  
+      "lat":"40.2731911",
+      "lng":"-76.8867008",
+      "type":"city",
+      "name":"Harrisburg, Pennsylvania"
+   },
+   {  
+      "lat":"41.8239891",
+      "lng":"-71.4128343",
+      "type":"city",
+      "name":"Providence, Rhode Island"
+   },
+   {  
+      "lat":"34.0007104",
+      "lng":"-81.0348144",
+      "type":"city",
+      "name":"Columbia, South Carolina"
+   },
+   {  
+      "lat":"44.3683156",
+      "lng":"-100.3509665",
+      "type":"city",
+      "name":"Pierre, South Dakota"
+   },
+   {  
+      "lat":"36.1626638",
+      "lng":"-86.7816016",
+      "type":"city",
+      "name":"Nashville, Tennessee"
+   },
+   {  
+      "lat":"30.267153",
+      "lng":"-97.7430608",
+      "type":"city",
+      "name":"Austin, Texas"
+   },
+   {  
+      "lat":"40.7607793",
+      "lng":"-111.8910474",
+      "type":"city",
+      "name":"Salt Lake City, Utah"
+   },
+   {  
+      "lat":"44.2600593",
+      "lng":"-72.5753869",
+      "type":"city",
+      "name":"Montpelier, Vermont"
+   },
+   {  
+      "lat":"37.5407246",
+      "lng":"-77.4360481",
+      "type":"city",
+      "name":"Richmond, Virginia"
+   },
+   {  
+      "lat":"47.0378741",
+      "lng":"-122.9006951",
+      "type":"city",
+      "name":"Olympia, Washington"
+   },
+   {  
+      "lat":"38.3498195",
+      "lng":"-81.6326234",
+      "type":"city",
+      "name":"Charleston, West Virginia"
+   },
+   {  
+      "lat":"43.0730517",
+      "lng":"-89.4012302",
+      "type":"city",
+      "name":"Madison, Wisconsin"
+   },
+   {  
+      "lat":"41.1399814",
+      "lng":"-104.8202462",
+      "type":"city",
+      "name":"Cheyenne, Wyoming"
+   },
+   {  
+      "lat":"43.0015252",
+      "lng":"41.0234153",
+      "type":"city",
+      "name":"Sukhumi, Abkhazia"
+   },
+   {  
+      "lat":"34.5755033",
+      "lng":"69.2400734",
+      "type":"city",
+      "name":"Kabul, Afghanistan"
+   },
+   {  
+      "lat":"41.3275459",
+      "lng":"19.8186982",
+      "type":"city",
+      "name":"Tirana, Albania"
+   },
+   {  
+      "lat":"36.752887",
+      "lng":"3.042048",
+      "type":"city",
+      "name":"Algiers, Algeria"
+   },
+   {  
+      "lat":"-14.2756319",
+      "lng":"-170.7020359",
+      "type":"city",
+      "name":"Pago Pago, American Samoa"
+   },
+   {  
+      "lat":"42.5063174",
+      "lng":"1.5218355",
+      "type":"city",
+      "name":"Andorra la Vella, Andorra"
+   },
+   {  
+      "lat":"-8.8399876",
+      "lng":"13.2894368",
+      "type":"city",
+      "name":"Luanda, Angola"
+   },
+   {  
+      "lat":"18.2148129",
+      "lng":"-63.0574406",
+      "type":"city",
+      "name":"The Valley, Anguilla"
+   },
+   {  
+      "lat":"-34.6036844",
+      "lng":"-58.3815591",
+      "type":"city",
+      "name":"Buenos Aires, Argentina"
+   },
+   {  
+      "lat":"40.1791857",
+      "lng":"44.4991029",
+      "type":"city",
+      "name":"Yerevan, Armenia"
+   },
+   {  
+      "lat":"12.5092044",
+      "lng":"-70.0086306",
+      "type":"city",
+      "name":"Oranjestad, Aruba"
+   },
+   {  
+      "lat":"-35.2819998",
+      "lng":"149.1286843",
+      "type":"city",
+      "name":"Canberra, Australia"
+   },
+   {  
+      "lat":"48.2081743",
+      "lng":"16.3738189",
+      "type":"city",
+      "name":"Vienna, Austria"
+   },
+   {  
+      "lat":"40.4092617",
+      "lng":"49.8670924",
+      "type":"city",
+      "name":"Baku, Azerbaijan"
+   },
+   {  
+      "lat":"25.0479835",
+      "lng":"-77.355413",
+      "type":"city",
+      "name":"Nassau, Bahamas"
+   },
+   {  
+      "lat":"26.2285161",
+      "lng":"50.5860497",
+      "type":"city",
+      "name":"Manama, Bahrain"
+   },
+   {  
+      "lat":"23.810332",
+      "lng":"90.4125181",
+      "type":"city",
+      "name":"Dhaka, Bangladesh"
+   },
+   {  
+      "lat":"13.1132219",
+      "lng":"-59.5988089",
+      "type":"city",
+      "name":"Bridgetown, Barbados"
+   },
+   {  
+      "lat":"53.9045398",
+      "lng":"27.5615244",
+      "type":"city",
+      "name":"Minsk, Belarus"
+   },
+   {  
+      "lat":"50.8503396",
+      "lng":"4.3517103",
+      "type":"city",
+      "name":"Brussels, Belgium"
+   },
+   {  
+      "lat":"17.2510114",
+      "lng":"-88.7590201",
+      "type":"city",
+      "name":"Belmopan, Belize"
+   },
+   {  
+      "lat":"6.4968574",
+      "lng":"2.6288523",
+      "type":"city",
+      "name":"Porto-Novo, Benin"
+   },
+   {  
+      "lat":"32.294816",
+      "lng":"-64.781375",
+      "type":"city",
+      "name":"Hamilton, Bermuda"
+   },
+   {  
+      "lat":"27.4727924",
+      "lng":"89.6392863",
+      "type":"city",
+      "name":"Thimphu, Bhutan"
+   },
+   {  
+      "lat":"-19.0195852",
+      "lng":"-65.2619615",
+      "type":"city",
+      "name":"Sucre, Bolivia"
+   },
+   {  
+      "lat":"43.8562586",
+      "lng":"18.4130763",
+      "type":"city",
+      "name":"Sarajevo, Bosnia and Herzegovina"
+   },
+   {  
+      "lat":"-24.6282079",
+      "lng":"25.9231471",
+      "type":"city",
+      "name":"Gaborone, Botswana"
+   },
+   {  
+      "lat":"-15.7942287",
+      "lng":"-47.8821658",
+      "type":"city",
+      "name":"Bras\\u00edlia, Brazil"
+   },
+   {  
+      "lat":"18.4286115",
+      "lng":"-64.6184657",
+      "type":"city",
+      "name":"Road Town, British Virgin Islands"
+   },
+   {  
+      "lat":"42.6977082",
+      "lng":"23.3218675",
+      "type":"city",
+      "name":"Sofia, Bulgaria"
+   },
+   {  
+      "lat":"12.3649666",
+      "lng":"-1.5402327",
+      "type":"city",
+      "name":"Ouagadougou, Burkina Faso"
+   },
+   {  
+      "lat":"-3.361378",
+      "lng":"29.3598782",
+      "type":"city",
+      "name":"Bujumbura, Burundi"
+   },
+   {  
+      "lat":"11.5448729",
+      "lng":"104.8921668",
+      "type":"city",
+      "name":"Phnom Penh, Cambodia"
+   },
+   {  
+      "lat":"3.8480325",
+      "lng":"11.5020752",
+      "type":"city",
+      "name":"Yaound\\u00e9, Cameroon"
+   },
+   {  
+      "lat":"45.4215296",
+      "lng":"-75.6971931",
+      "type":"city",
+      "name":"Ottawa, Canada"
+   },
+   {  
+      "lat":"14.93305",
+      "lng":"-23.5133267",
+      "type":"city",
+      "name":"Praia, Cape Verde"
+   },
+   {  
+      "lat":"19.2869323",
+      "lng":"-81.3674389",
+      "type":"city",
+      "name":"George Town, Cayman Islands"
+   },
+   {  
+      "lat":"4.3946735",
+      "lng":"18.5581899",
+      "type":"city",
+      "name":"Bangui, Central African Republic"
+   },
+   {  
+      "lat":"12.1348457",
+      "lng":"15.0557415",
+      "type":"city",
+      "name":"N'Djamena, Chad"
+   },
+   {  
+      "lat":"-33.4488897",
+      "lng":"-70.6692655",
+      "type":"city",
+      "name":"Santiago, Chile"
+   },
+   {  
+      "lat":"39.904211",
+      "lng":"116.407395",
+      "type":"city",
+      "name":"Beijing, China"
+   },
+   {  
+      "lat":"-10.4206861",
+      "lng":"105.6793792",
+      "type":"city",
+      "name":"Flying Fish Cove, Christmas Island"
+   },
+   {  
+      "lat":"4.7109886",
+      "lng":"-74.072092",
+      "type":"city",
+      "name":"Bogot\\u00e1, Colombia"
+   },
+   {  
+      "lat":"-11.7172157",
+      "lng":"43.2473146",
+      "type":"city",
+      "name":"Moroni, Comoros"
+   },
+   {  
+      "lat":"-21.2129007",
+      "lng":"-159.7823059",
+      "type":"city",
+      "name":"Avarua, Cook Islands"
+   },
+   {  
+      "lat":"9.9280694",
+      "lng":"-84.0907246",
+      "type":"city",
+      "name":"San Jos\\u00e9, Costa Rica"
+   },
+   {  
+      "lat":"45.8150108",
+      "lng":"15.981919",
+      "type":"city",
+      "name":"Zagreb, Croatia"
+   },
+   {  
+      "lat":"23.0540698",
+      "lng":"-82.345189",
+      "type":"city",
+      "name":"Havana, Cuba"
+   },
+   {  
+      "lat":"12.1224221",
+      "lng":"-68.8824233",
+      "type":"city",
+      "name":"Willemstad, Cura\\u00e7ao"
+   },
+   {  
+      "lat":"35.1855659",
+      "lng":"33.3822764",
+      "type":"city",
+      "name":"Nicosia, Cyprus"
+   },
+   {  
+      "lat":"50.0755381",
+      "lng":"14.4378005",
+      "type":"city",
+      "name":"Prague, Czech Republic"
+   },
+   {  
+      "lat":"6.8276228",
+      "lng":"-5.2893433",
+      "type":"city",
+      "name":"Yamoussoukro, C\\u00f4te d'Ivoire"
+   },
+   {  
+      "lat":"-4.4419311",
+      "lng":"15.2662931",
+      "type":"city",
+      "name":"Kinshasa, Democratic Republic of the Congo"
+   },
+   {  
+      "lat":"55.6760968",
+      "lng":"12.5683371",
+      "type":"city",
+      "name":"Copenhagen, Denmark"
+   },
+   {  
+      "lat":"11.5720765",
+      "lng":"43.1456475",
+      "type":"city",
+      "name":"Djibouti, Djibouti"
+   },
+   {  
+      "lat":"15.3091676",
+      "lng":"-61.3793554",
+      "type":"city",
+      "name":"Roseau, Dominica"
+   },
+   {  
+      "lat":"18.4860575",
+      "lng":"-69.9312117",
+      "type":"city",
+      "name":"Santo Domingo, Dominican Republic"
+   },
+   {  
+      "lat":"-0.1806532",
+      "lng":"-78.4678382",
+      "type":"city",
+      "name":"Quito, Ecuador"
+   },
+   {  
+      "lat":"30.0444196",
+      "lng":"31.2357116",
+      "type":"city",
+      "name":"Cairo, Egypt"
+   },
+   {  
+      "lat":"13.6929403",
+      "lng":"-89.2181911",
+      "type":"city",
+      "name":"San Salvador, El Salvador"
+   },
+   {  
+      "lat":"3.7504118",
+      "lng":"8.7371039",
+      "type":"city",
+      "name":"Malabo, Equatorial Guinea"
+   },
+   {  
+      "lat":"15.3228767",
+      "lng":"38.9250517",
+      "type":"city",
+      "name":"Asmara, Eritrea"
+   },
+   {  
+      "lat":"59.4369608",
+      "lng":"24.7535746",
+      "type":"city",
+      "name":"Tallinn, Estonia"
+   },
+   {  
+      "lat":"8.9806034",
+      "lng":"38.7577605",
+      "type":"city",
+      "name":"Addis Ababa, Ethiopia"
+   },
+   {  
+      "lat":"-51.6977129",
+      "lng":"-57.8516627",
+      "type":"city",
+      "name":"Stanley, Falkland Islands"
+   },
+   {  
+      "lat":"62.007864",
+      "lng":"-6.7909816",
+      "type":"city",
+      "name":"Torshavn, Faroe Islands"
+   },
+   {  
+      "lat":"6.9147118",
+      "lng":"158.1610274",
+      "type":"city",
+      "name":"Palikir, Federated States of Micronesia"
+   },
+   {  
+      "lat":"-18.1248086",
+      "lng":"178.4500789",
+      "type":"city",
+      "name":"Suva, Fiji"
+   },
+   {  
+      "lat":"60.1733244",
+      "lng":"24.9410248",
+      "type":"city",
+      "name":"Helsinki, Finland"
+   },
+   {  
+      "lat":"48.856614",
+      "lng":"2.3522219",
+      "type":"city",
+      "name":"Paris, France"
+   },
+   {  
+      "lat":"4.92242",
+      "lng":"-52.3134531",
+      "type":"city",
+      "name":"Cayenne, French Guiana"
+   },
+   {  
+      "lat":"-17.5516251",
+      "lng":"-149.5584758",
+      "type":"city",
+      "name":"Papeete, French Polynesia"
+   },
+   {  
+      "lat":"0.4161976",
+      "lng":"9.4672676",
+      "type":"city",
+      "name":"Libreville, Gabon"
+   },
+   {  
+      "lat":"13.4548761",
+      "lng":"-16.5790323",
+      "type":"city",
+      "name":"Banjul, Gambia"
+   },
+   {  
+      "lat":"41.7151377",
+      "lng":"44.827096",
+      "type":"city",
+      "name":"Tbilisi, Georgia"
+   },
+   {  
+      "lat":"52.5200066",
+      "lng":"13.404954",
+      "type":"city",
+      "name":"Berlin, Germany"
+   },
+   {  
+      "lat":"5.6037168",
+      "lng":"-0.1869644",
+      "type":"city",
+      "name":"Accra, Ghana"
+   },
+   {  
+      "lat":"36.1407734",
+      "lng":"-5.3535994",
+      "type":"city",
+      "name":"Gibraltar, Gibraltar"
+   },
+   {  
+      "lat":"37.983917",
+      "lng":"23.7293599",
+      "type":"city",
+      "name":"Athens, Greece"
+   },
+   {  
+      "lat":"64.1814099",
+      "lng":"-51.694138",
+      "type":"city",
+      "name":"Nuuk, Greenland"
+   },
+   {  
+      "lat":"12.0560975",
+      "lng":"-61.7487996",
+      "type":"city",
+      "name":"St. George's, Grenada"
+   },
+   {  
+      "lat":"13.4708908",
+      "lng":"144.7512782",
+      "type":"city",
+      "name":"Hagatna, Guam"
+   },
+   {  
+      "lat":"14.6349149",
+      "lng":"-90.5068824",
+      "type":"city",
+      "name":"Guatemala City, Guatemala"
+   },
+   {  
+      "lat":"49.455443",
+      "lng":"-2.5368711",
+      "type":"city",
+      "name":"St. Peter Port, Guernsey"
+   },
+   {  
+      "lat":"9.6411855",
+      "lng":"-13.5784012",
+      "type":"city",
+      "name":"Conakry, Guinea"
+   },
+   {  
+      "lat":"11.8816553",
+      "lng":"-15.6177942",
+      "type":"city",
+      "name":"Bissau, Guinea-Bissau"
+   },
+   {  
+      "lat":"6.8012793",
+      "lng":"-58.1551255",
+      "type":"city",
+      "name":"Georgetown, Guyana"
+   },
+   {  
+      "lat":"18.594395",
+      "lng":"-72.3074326",
+      "type":"city",
+      "name":"Port-au-Prince, Haiti"
+   },
+   {  
+      "lat":"14.0722751",
+      "lng":"-87.192136",
+      "type":"city",
+      "name":"Tegucigalpa, Honduras"
+   },
+   {  
+      "lat":"47.497912",
+      "lng":"19.040235",
+      "type":"city",
+      "name":"Budapest, Hungary"
+   },
+   {  
+      "lat":"64.1265206",
+      "lng":"-21.8174393",
+      "type":"city",
+      "name":"Reykjavik, Iceland"
+   },
+   {  
+      "lat":"28.6139391",
+      "lng":"77.2090212",
+      "type":"city",
+      "name":"New Delhi, India"
+   },
+   {  
+      "lat":"-6.2087634",
+      "lng":"106.845599",
+      "type":"city",
+      "name":"Jakarta, Indonesia"
+   },
+   {  
+      "lat":"35.6891975",
+      "lng":"51.3889736",
+      "type":"city",
+      "name":"Tehran, Iran"
+   },
+   {  
+      "lat":"33.3128057",
+      "lng":"44.3614875",
+      "type":"city",
+      "name":"Baghdad, Iraq"
+   },
+   {  
+      "lat":"53.3498053",
+      "lng":"-6.2603097",
+      "type":"city",
+      "name":"Dublin, Ireland"
+   },
+   {  
+      "lat":"54.1523372",
+      "lng":"-4.4861228",
+      "type":"city",
+      "name":"Douglas, Isle of Man"
+   },
+   {  
+      "lat":"31.768319",
+      "lng":"35.21371",
+      "type":"city",
+      "name":"Jerusalem, Israel"
+   },
+   {  
+      "lat":"41.9027835",
+      "lng":"12.4963655",
+      "type":"city",
+      "name":"Rome, Italy"
+   },
+   {  
+      "lat":"18.0423274",
+      "lng":"-76.8028933",
+      "type":"city",
+      "name":"Kingston, Jamaica"
+   },
+   {  
+      "lat":"35.7090259",
+      "lng":"139.7319925",
+      "type":"city",
+      "name":"Tokyo, Japan"
+   },
+   {  
+      "lat":"49.1868225",
+      "lng":"-2.1065682",
+      "type":"city",
+      "name":"St. Helier, Jersey"
+   },
+   {  
+      "lat":"31.9565783",
+      "lng":"35.9456951",
+      "type":"city",
+      "name":"Amman, Jordan"
+   },
+   {  
+      "lat":"51.0223575",
+      "lng":"71.4670034",
+      "type":"city",
+      "name":"Astana, Kazakhstan"
+   },
+   {  
+      "lat":"-1.2920659",
+      "lng":"36.8219462",
+      "type":"city",
+      "name":"Nairobi, Kenya"
+   },
+   {  
+      "lat":"1.3290526",
+      "lng":"172.9790528",
+      "type":"city",
+      "name":"Tarawa, Kiribati"
+   },
+   {  
+      "lat":"42.6629138",
+      "lng":"21.1655028",
+      "type":"city",
+      "name":"Pristina, Kosovo"
+   },
+   {  
+      "lat":"29.375859",
+      "lng":"47.9774052",
+      "type":"city",
+      "name":"Kuwait City, Kuwait"
+   },
+   {  
+      "lat":"42.8746212",
+      "lng":"74.5697617",
+      "type":"city",
+      "name":"Bishkek, Kyrgyzstan"
+   },
+   {  
+      "lat":"17.9757058",
+      "lng":"102.6331035",
+      "type":"city",
+      "name":"Vientiane, Laos"
+   },
+   {  
+      "lat":"56.9496487",
+      "lng":"24.1051864",
+      "type":"city",
+      "name":"Riga, Latvia"
+   },
+   {  
+      "lat":"33.8886289",
+      "lng":"35.4954794",
+      "type":"city",
+      "name":"Beirut, Lebanon"
+   },
+   {  
+      "lat":"-29.3632188",
+      "lng":"27.5143603",
+      "type":"city",
+      "name":"Maseru, Lesotho"
+   },
+   {  
+      "lat":"6.2907432",
+      "lng":"-10.7605239",
+      "type":"city",
+      "name":"Monrovia, Liberia"
+   },
+   {  
+      "lat":"32.8872094",
+      "lng":"13.1913383",
+      "type":"city",
+      "name":"Tripoli, Libya"
+   },
+   {  
+      "lat":"47.1410303",
+      "lng":"9.5209277",
+      "type":"city",
+      "name":"Vaduz, Liechtenstein"
+   },
+   {  
+      "lat":"54.6380366",
+      "lng":"25.2865583",
+      "type":"city",
+      "name":"Vilnius, Lithuania"
+   },
+   {  
+      "lat":"49.611621",
+      "lng":"6.1319346",
+      "type":"city",
+      "name":"Luxembourg, Luxembourg"
+   },
+   {  
+      "lat":"41.9973462",
+      "lng":"21.4279956",
+      "type":"city",
+      "name":"Skopje, Macedonia"
+   },
+   {  
+      "lat":"-18.8791902",
+      "lng":"47.5079055",
+      "type":"city",
+      "name":"Antananarivo, Madagascar"
+   },
+   {  
+      "lat":"-13.9626121",
+      "lng":"33.7741195",
+      "type":"city",
+      "name":"Lilongwe, Malawi"
+   },
+   {  
+      "lat":"3.139003",
+      "lng":"101.686855",
+      "type":"city",
+      "name":"Kuala Lumpur, Malaysia"
+   },
+   {  
+      "lat":"4.1754959",
+      "lng":"73.5093474",
+      "type":"city",
+      "name":"Male, Maldives"
+   },
+   {  
+      "lat":"12.6392316",
+      "lng":"-8.0028892",
+      "type":"city",
+      "name":"Bamako, Mali"
+   },
+   {  
+      "lat":"35.8989085",
+      "lng":"14.5145528",
+      "type":"city",
+      "name":"Valletta, Malta"
+   },
+   {  
+      "lat":"7.1164214",
+      "lng":"171.1857736",
+      "type":"city",
+      "name":"Majuro, Marshall Islands"
+   },
+   {  
+      "lat":"18.0735299",
+      "lng":"-15.9582372",
+      "type":"city",
+      "name":"Nouakchott, Mauritania"
+   },
+   {  
+      "lat":"-20.1668958",
+      "lng":"57.502332",
+      "type":"city",
+      "name":"Port Louis, Mauritius"
+   },
+   {  
+      "lat":"19.4326077",
+      "lng":"-99.133208",
+      "type":"city",
+      "name":"Mexico City, Mexico"
+   },
+   {  
+      "lat":"47.0104529",
+      "lng":"28.8638103",
+      "type":"city",
+      "name":"Chisinau, Moldova"
+   },
+   {  
+      "lat":"43.737411",
+      "lng":"7.420816",
+      "type":"city",
+      "name":"Monaco, Monaco"
+   },
+   {  
+      "lat":"47.8863988",
+      "lng":"106.9057439",
+      "type":"city",
+      "name":"Ulaanbaatar, Mongolia"
+   },
+   {  
+      "lat":"42.4304196",
+      "lng":"19.2593642",
+      "type":"city",
+      "name":"Podgorica, Montenegro"
+   },
+   {  
+      "lat":"16.706523",
+      "lng":"-62.215738",
+      "type":"city",
+      "name":"Plymouth, Montserrat"
+   },
+   {  
+      "lat":"33.9715904",
+      "lng":"-6.8498129",
+      "type":"city",
+      "name":"Rabat, Morocco"
+   },
+   {  
+      "lat":"-25.891968",
+      "lng":"32.6051351",
+      "type":"city",
+      "name":"Maputo, Mozambique"
+   },
+   {  
+      "lat":"19.7633057",
+      "lng":"96.0785104",
+      "type":"city",
+      "name":"Naypyidaw, Myanmar"
+   },
+   {  
+      "lat":"39.9006631",
+      "lng":"46.7860157",
+      "type":"city",
+      "name":"Stepanakert, Nagorno-Karabakh Republic"
+   },
+   {  
+      "lat":"-22.5608807",
+      "lng":"17.0657549",
+      "type":"city",
+      "name":"Windhoek, Namibia"
+   },
+   {  
+      "lat":"-0.547613",
+      "lng":"166.919112",
+      "type":"city",
+      "name":"Yaren, Nauru"
+   },
+   {  
+      "lat":"27.7172453",
+      "lng":"85.3239605",
+      "type":"city",
+      "name":"Kathmandu, Nepal"
+   },
+   {  
+      "lat":"52.3702157",
+      "lng":"4.8951679",
+      "type":"city",
+      "name":"Amsterdam, Netherlands"
+   },
+   {  
+      "lat":"-22.2558234",
+      "lng":"166.4505243",
+      "type":"city",
+      "name":"Noumea, New Caledonia"
+   },
+   {  
+      "lat":"-41.2864603",
+      "lng":"174.776236",
+      "type":"city",
+      "name":"Wellington, New Zealand"
+   },
+   {  
+      "lat":"12.1149926",
+      "lng":"-86.2361744",
+      "type":"city",
+      "name":"Managua, Nicaragua"
+   },
+   {  
+      "lat":"13.5115963",
+      "lng":"2.1253854",
+      "type":"city",
+      "name":"Niamey, Niger"
+   },
+   {  
+      "lat":"9.0764785",
+      "lng":"7.398574",
+      "type":"city",
+      "name":"Abuja, Nigeria"
+   },
+   {  
+      "lat":"-19.0553711",
+      "lng":"-169.9178709",
+      "type":"city",
+      "name":"Alofi, Niue"
+   },
+   {  
+      "lat":"-29.0563937",
+      "lng":"167.959588",
+      "type":"city",
+      "name":"Kingston, Norfolk Island"
+   },
+   {  
+      "lat":"39.0392193",
+      "lng":"125.7625241",
+      "type":"city",
+      "name":"Pyongyang, North Korea"
+   },
+   {  
+      "lat":"35.1855659",
+      "lng":"33.3822764",
+      "type":"city",
+      "name":"Nicosia, Northern Cyprus"
+   },
+   {  
+      "lat":"54.597285",
+      "lng":"-5.93012",
+      "type":"city",
+      "name":"Belfast, United Kingdom Northern Ireland"
+   },
+   {  
+      "lat":"15.177801",
+      "lng":"145.750967",
+      "type":"city",
+      "name":"Saipan, Northern Mariana Islands"
+   },
+   {  
+      "lat":"59.9138688",
+      "lng":"10.7522454",
+      "type":"city",
+      "name":"Oslo, Norway"
+   },
+   {  
+      "lat":"23.58589",
+      "lng":"58.4059227",
+      "type":"city",
+      "name":"Muscat, Oman"
+   },
+   {  
+      "lat":"33.7293882",
+      "lng":"73.0931461",
+      "type":"city",
+      "name":"Islamabad, Pakistan"
+   },
+   {  
+      "lat":"7.5003835",
+      "lng":"134.624289",
+      "type":"city",
+      "name":"Ngerulmud, Palau"
+   },
+   {  
+      "lat":"31.768319",
+      "lng":"35.21371",
+      "type":"city",
+      "name":"Jerusalem, Palestine"
+   },
+   {  
+      "lat":"9.1011785",
+      "lng":"-79.4028639",
+      "type":"city",
+      "name":"Panama City, Panama"
+   },
+   {  
+      "lat":"-9.4438004",
+      "lng":"147.1802671",
+      "type":"city",
+      "name":"Port Moresby, Papua New Guinea"
+   },
+   {  
+      "lat":"-25.2637399",
+      "lng":"-57.575926",
+      "type":"city",
+      "name":"Asuncion, Paraguay"
+   },
+   {  
+      "lat":"-12.046374",
+      "lng":"-77.0427934",
+      "type":"city",
+      "name":"Lima, Peru"
+   },
+   {  
+      "lat":"14.5995124",
+      "lng":"120.9842195",
+      "type":"city",
+      "name":"Manila, Philippines"
+   },
+   {  
+      "lat":"-25.0662897",
+      "lng":"-130.1004636",
+      "type":"city",
+      "name":"Adamstown, Pitcairn Islands"
+   },
+   {  
+      "lat":"52.2296756",
+      "lng":"21.0122287",
+      "type":"city",
+      "name":"Warsaw, Poland"
+   },
+   {  
+      "lat":"38.7222524",
+      "lng":"-9.1393366",
+      "type":"city",
+      "name":"Lisbon, Portugal"
+   },
+   {  
+      "lat":"18.4663338",
+      "lng":"-66.1057217",
+      "type":"city",
+      "name":"San Juan, Puerto Rico"
+   },
+   {  
+      "lat":"25.2916097",
+      "lng":"51.5304368",
+      "type":"city",
+      "name":"Doha, Qatar"
+   },
+   {  
+      "lat":"25.0329694",
+      "lng":"121.5654177",
+      "type":"city",
+      "name":"Taipei, Republic of China (Taiwan)"
+   },
+   {  
+      "lat":"-4.2633597",
+      "lng":"15.2428853",
+      "type":"city",
+      "name":"Brazzaville, Republic of the Congo"
+   },
+   {  
+      "lat":"44.4267674",
+      "lng":"26.1025384",
+      "type":"city",
+      "name":"Bucharest, Romania"
+   },
+   {  
+      "lat":"55.755826",
+      "lng":"37.6173",
+      "type":"city",
+      "name":"Moscow, Russia"
+   },
+   {  
+      "lat":"-1.9578755",
+      "lng":"30.112735",
+      "type":"city",
+      "name":"Kigali, Rwanda"
+   },
+   {  
+      "lat":"-15.9286343",
+      "lng":"-5.7151749",
+      "type":"city",
+      "name":"Jamestown, Saint Helena"
+   },
+   {  
+      "lat":"17.3026058",
+      "lng":"-62.7176924",
+      "type":"city",
+      "name":"Basseterre, Saint Kitts and Nevis"
+   },
+   {  
+      "lat":"14.0101094",
+      "lng":"-60.9874687",
+      "type":"city",
+      "name":"Castries, Saint Lucia"
+   },
+   {  
+      "lat":"18.0675189",
+      "lng":"-63.0824656",
+      "type":"city",
+      "name":"Marigot, Saint Martin"
+   },
+   {  
+      "lat":"46.7758459",
+      "lng":"-56.1806363",
+      "type":"city",
+      "name":"St. Pierre, Saint Pierre and Miquelon"
+   },
+   {  
+      "lat":"13.1600249",
+      "lng":"-61.2248157",
+      "type":"city",
+      "name":"Kingstown, Saint Vincent and the Grenadines"
+   },
+   {  
+      "lat":"-13.8506958",
+      "lng":"-171.7513551",
+      "type":"city",
+      "name":"Apia, Samoa"
+   },
+   {  
+      "lat":"43.9355907",
+      "lng":"12.4472806",
+      "type":"city",
+      "name":"San Marino, San Marino"
+   },
+   {  
+      "lat":"24.7494029",
+      "lng":"46.9028375",
+      "type":"city",
+      "name":"Riyadh, Saudi Arabia"
+   },
+   {  
+      "lat":"55.953252",
+      "lng":"-3.188267",
+      "type":"city",
+      "name":"Edinburgh, Scotland"
+   },
+   {  
+      "lat":"14.7645042",
+      "lng":"-17.3660286",
+      "type":"city",
+      "name":"Dakar, Senegal"
+   },
+   {  
+      "lat":"44.786568",
+      "lng":"20.4489216",
+      "type":"city",
+      "name":"Belgrade, Serbia"
+   },
+   {  
+      "lat":"-4.619143",
+      "lng":"55.4513149",
+      "type":"city",
+      "name":"Victoria, Seychelles"
+   },
+   {  
+      "lat":"8.4656765",
+      "lng":"-13.2317225",
+      "type":"city",
+      "name":"Freetown, Sierra Leone"
+   },
+   {  
+      "lat":"1.2800945",
+      "lng":"103.8509491",
+      "type":"city",
+      "name":"Singapore, Singapore"
+   },
+   {  
+      "lat":"18.0295839",
+      "lng":"-63.0471371",
+      "type":"city",
+      "name":"Philipsburg, Sint Maarten"
+   },
+   {  
+      "lat":"48.1458923",
+      "lng":"17.1071373",
+      "type":"city",
+      "name":"Bratislava, Slovakia"
+   },
+   {  
+      "lat":"46.0569465",
+      "lng":"14.5057515",
+      "type":"city",
+      "name":"Ljubljana, Slovenia"
+   },
+   {  
+      "lat":"-9.4456381",
+      "lng":"159.9728999",
+      "type":"city",
+      "name":"Honiara, Solomon Islands"
+   },
+   {  
+      "lat":"2.0469343",
+      "lng":"45.3181623",
+      "type":"city",
+      "name":"Mogadishu, Somalia"
+   },
+   {  
+      "lat":"9.562389",
+      "lng":"44.0770134",
+      "type":"city",
+      "name":"Hargeisa, Somaliland"
+   },
+   {  
+      "lat":"-25.7478676",
+      "lng":"28.2292712",
+      "type":"city",
+      "name":"Pretoria, South Africa"
+   },
+   {  
+      "lat":"37.566535",
+      "lng":"126.9779692",
+      "type":"city",
+      "name":"Seoul, South Korea"
+   },
+   {  
+      "lat":"42.2214597",
+      "lng":"43.9644051",
+      "type":"city",
+      "name":"Tskhinvali, South Ossetia"
+   },
+   {  
+      "lat":"4.859363",
+      "lng":"31.57125",
+      "type":"city",
+      "name":"Juba, South Sudan South Sudan"
+   },
+   {  
+      "lat":"40.4167754",
+      "lng":"-3.7037902",
+      "type":"city",
+      "name":"Madrid, Spain"
+   },
+   {  
+      "lat":"6.8940701",
+      "lng":"79.9024779",
+      "type":"city",
+      "name":"Sri Jayawardenapura Kotte, Sri Lanka"
+   },
+   {  
+      "lat":"15.5927666",
+      "lng":"32.5522355",
+      "type":"city",
+      "name":"Khartoum, Sudan"
+   },
+   {  
+      "lat":"5.8520355",
+      "lng":"-55.2038278",
+      "type":"city",
+      "name":"Paramaribo, Suriname"
+   },
+   {  
+      "lat":"-26.3054482",
+      "lng":"31.1366715",
+      "type":"city",
+      "name":"Mbabane, Swaziland"
+   },
+   {  
+      "lat":"59.3293235",
+      "lng":"18.0685808",
+      "type":"city",
+      "name":"Stockholm, Sweden"
+   },
+   {  
+      "lat":"46.9479222",
+      "lng":"7.4446085",
+      "type":"city",
+      "name":"Bern, Switzerland"
+   },
+   {  
+      "lat":"33.4934965",
+      "lng":"36.2847751",
+      "type":"city",
+      "name":"Damascus, Syria"
+   },
+   {  
+      "lat":"38.5597722",
+      "lng":"68.7870384",
+      "type":"city",
+      "name":"Dushanbe, Tajikistan"
+   },
+   {  
+      "lat":"-6.169694",
+      "lng":"35.752277",
+      "type":"city",
+      "name":"Dodoma, Tanzania"
+   },
+   {  
+      "lat":"13.7563309",
+      "lng":"100.5017651",
+      "type":"city",
+      "name":"Bangkok, Thailand"
+   },
+   {  
+      "lat":"6.1724969",
+      "lng":"1.2313618",
+      "type":"city",
+      "name":"Lome, Togo"
+   },
+   {  
+      "lat":"-21.1393418",
+      "lng":"-175.204947",
+      "type":"city",
+      "name":"Nuku'alofa, Tonga"
+   },
+   {  
+      "lat":"46.848185",
+      "lng":"29.596805",
+      "type":"city",
+      "name":"Tiraspol, Transnistria"
+   },
+   {  
+      "lat":"10.6549013",
+      "lng":"-61.5019256",
+      "type":"city",
+      "name":"Port of Spain, Trinidad and Tobago"
+   },
+   {  
+      "lat":"36.8064948",
+      "lng":"10.1815316",
+      "type":"city",
+      "name":"Tunis, Tunisia"
+   },
+   {  
+      "lat":"39.9333635",
+      "lng":"32.8597419",
+      "type":"city",
+      "name":"Ankara, Turkey"
+   },
+   {  
+      "lat":"37.9600766",
+      "lng":"58.3260629",
+      "type":"city",
+      "name":"Ashgabat, Turkmenistan"
+   },
+   {  
+      "lat":"21.4674584",
+      "lng":"-71.1389101",
+      "type":"city",
+      "name":"Cockburn Town, Turks and Caicos Islands"
+   },
+   {  
+      "lat":"-8.516667",
+      "lng":"179.216667",
+      "type":"city",
+      "name":"Funafuti, Tuvalu"
+   },
+   {  
+      "lat":"0.3475964",
+      "lng":"32.5825197",
+      "type":"city",
+      "name":"Kampala, Uganda"
+   },
+   {  
+      "lat":"50.4501",
+      "lng":"30.5234",
+      "type":"city",
+      "name":"Kiev, Ukraine"
+   },
+   {  
+      "lat":"24.2991738",
+      "lng":"54.6972774",
+      "type":"city",
+      "name":"Abu Dhabi, United Arab Emirates"
+   },
+   {  
+      "lat":"51.5073509",
+      "lng":"-0.1277583",
+      "type":"city",
+      "name":"London, United Kingdom; England"
+   },
+   {  
+      "lat":" D.C.",
+      "lng":"38.9071923",
+      "type":"city",
+      "name":"Washington, United States"
+   },
+   {  
+      "lat":"18.3419004",
+      "lng":"-64.9307007",
+      "type":"city",
+      "name":"Charlotte Amalie, United States Virgin Islands"
+   },
+   {  
+      "lat":"-34.9011127",
+      "lng":"-56.1645314",
+      "type":"city",
+      "name":"Montevideo, Uruguay"
+   },
+   {  
+      "lat":"41.3125",
+      "lng":"69.390274",
+      "type":"city",
+      "name":"Tashkent, Uzbekistan"
+   },
+   {  
+      "lat":"-17.7332512",
+      "lng":"168.3273245",
+      "type":"city",
+      "name":"Port Vila, Vanuatu"
+   },
+   {  
+      "lat":"41.9021788",
+      "lng":"12.4536007",
+      "type":"city",
+      "name":"Vatican City, Vatican City"
+   },
+   {  
+      "lat":"10.4696404",
+      "lng":"-66.8037185",
+      "type":"city",
+      "name":"Caracas, Venezuela"
+   },
+   {  
+      "lat":"21.0277644",
+      "lng":"105.8341598",
+      "type":"city",
+      "name":"Hanoi, Vietnam"
+   },
+   {  
+      "lat":"51.481581",
+      "lng":"-3.17909",
+      "type":"city",
+      "name":"Cardiff, Wales"
+   },
+   {  
+      "lat":"15.3694451",
+      "lng":"44.1910066",
+      "type":"city",
+      "name":"Sana'a, Yemen"
+   },
+   {  
+      "lat":"-15.3875259",
+      "lng":"28.3228165",
+      "type":"city",
+      "name":"Lusaka, Zambia"
+   },
+   {  
+      "lat":"-17.8251657",
+      "lng":"31.03351",
+      "type":"city",
+      "name":"Harare, Zimbabwe"
+   }
+]
