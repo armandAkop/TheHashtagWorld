@@ -555,7 +555,7 @@
       "lat":"4.7109886",
       "lng":"-74.072092",
       "type":"city",
-      "name":"Bogot\\u00e1, Colombia"
+      "name":"Bogota, Colombia"
    },
    {  
       "lat":"-11.7172157",
@@ -573,7 +573,7 @@
       "lat":"9.9280694",
       "lng":"-84.0907246",
       "type":"city",
-      "name":"San Jos\\u00e9, Costa Rica"
+      "name":"San Jose, Costa Rica"
    },
    {  
       "lat":"45.8150108",
@@ -591,7 +591,7 @@
       "lat":"12.1224221",
       "lng":"-68.8824233",
       "type":"city",
-      "name":"Willemstad, Cura\\u00e7ao"
+      "name":"Willemstad, Curacao"
    },
    {  
       "lat":"35.1855659",
@@ -604,12 +604,6 @@
       "lng":"14.4378005",
       "type":"city",
       "name":"Prague, Czech Republic"
-   },
-   {  
-      "lat":"6.8276228",
-      "lng":"-5.2893433",
-      "type":"city",
-      "name":"Yamoussoukro, C\\u00f4te d'Ivoire"
    },
    {  
       "lat":"-4.4419311",
