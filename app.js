@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var homepageRoutes = require('./lib/routes/index');
 
 // Immediately start crons
-require('./cron/location');
+require('./cron/searchCron');
 
 var app = express();
 

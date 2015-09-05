@@ -6,7 +6,7 @@ var CacheKeys = require('../lib/cache/cacheKeys');
 var Twitter = require('twitter');
 var redisClient = require('redis').createClient();
 var googleAPI = require('../lib/api/googleAPI');
-var TrendLocation = require('../lib/models/trendLocation');
+var Location = require('../lib/models/location');
 var Tweets = require('../lib/models/tweets');
 
 redisClient.on('error', function(err) {
@@ -21,51 +21,51 @@ redisClient.on('ready', function() {
 
 function trendsAvailableCron() {
 	// 12:00 AM every Sunday
-	new CronJob('00 00 00 * * 0', function() {
+	new CronJob('00 02 20 * * ', function() {
 	  console.log('Starting trendsAvailableCron');
 	  _getTrendsAvailable();
 	}, null, true, 'America/Los_Angeles');
 }
 
 function searchTweetsCron() {
-	new CronJob('00 08 15 * * *', function() {
+	new CronJob('10 18 18 * * *', function() {
 		console.log('Starting searchTweetsCron');
 		_searchTweets();
 	}, null, true, 'America/Los_Angeles');
 }
 
 function startCrons() {
-	trendsAvailableCron();
+	//trendsAvailableCron();
+	console.log("STARTING CRONS");
 	searchTweetsCron();
 }
 
 var _searchTweets = function() {
-	var locations = redisClient.get(CacheKeys.Twitter.TRENDS_AVAILABLE, function(err, reply) {
+	//var locations = redisClient.get(CacheKeys.Twitter.TRENDS_AVAILABLE, function(err, reply) {
 
-		if (reply != null) {
-			var trendLocations = JSON.parse(reply);
-			trendLocations = trendLocations.slice(0, 10);
-			console.log("Trend loc len " + trendLocations.length);
-			_getTweets(trendLocations, function(error, tweets) {
+		//if (reply != null) {
+			var locations = require('../fixtures/capitals.json');
+			console.log("GOT LOCATIONS FROM REQUIRE! " + locations.length);
+			console.log("Trend loc len " + locations.length);
+			_getTweets(locations, function(error, tweets) {
 				_cacheTweets(tweets);
 			});
-		}
-	});
+		//}
+	//});
 }
 
-var _getTweets = function(trendLocations, callback) {
-	var THREE_SECOND_DELAY = 3000;
+var _getTweets = function(locations, callback) {
+	var ONE_SECOND_DELAY = 1000;
 	var updatedTweets = []
 
 	var twitterClient = new Twitter(credentialsConfig.twitter.credentials);
 
 	var interval = setInterval(function() {
-		var loc = trendLocations.shift();
+		var loc = locations.shift();
 
 		if (loc) {
-			var searchableTwitterName = TrendLocation.prototype.getSearchableTwitterName.call(loc);
 
-			var params = {q: searchableTwitterName, result_type: 'popular', lang: 'en'};
+			var params = {q: loc.name, result_type: 'popular', count: 10, lang: 'en'};
 			console.log("Calling twitter client search tweets");
 			twitterClient.get('search/tweets', params, function(error, twts) {
 				if (!error) {
@@ -83,14 +83,14 @@ var _getTweets = function(trendLocations, callback) {
 			callback(null, updatedTweets);
 		}
 
-	}, THREE_SECOND_DELAY);
+	}, ONE_SECOND_DELAY);
 }
 
 var _cacheTweets = function(tweets) {
 	redisClient.set(CacheKeys.Twitter.TWEETS, JSON.stringify(tweets));
 }
 
-var _getTrendsAvailable = function() {
+/*var _getTrendsAvailable = function() {
 
 	var twitterClient = new Twitter(credentialsConfig.twitter.credentials);
 	
@@ -101,7 +101,7 @@ var _getTrendsAvailable = function() {
 		     filteredLocations = _filterByLocationType(data, ['Town', 'Country']);
 		     var trendLocationsArr = _buildTrendLocationsArray(filteredLocations);
 		  
-		     // Call google place search API for each location, get the lat/lng and store in TrendLocation object
+		     // Call google place search API for each location, get the lat/lng and store in Location object
 			 _updateTrendLocation(trendLocationsArr, function(error, updatedLocations) {
 			  	if (!error) {
 			  	  _cacheTrendLocations(updatedLocations);
@@ -110,7 +110,7 @@ var _getTrendsAvailable = function() {
 		}
 
 	});
-}
+}*/
 
 var _updateTrendLocation = function(locations, callback) {
 	var DELAY_TWO_SECONDS = 2000;
@@ -127,7 +127,7 @@ var _updateTrendLocation = function(locations, callback) {
 					clearInterval(interval);
 					callback(err);
 				} else {
-					// Updates TrendLocation object
+					// Updates Location object
 					if (data.results.length > 0) {
 						var googleLoc = data.results[0].geometry.location;
 						loc.lat = googleLoc.lat;
@@ -146,21 +146,21 @@ var _updateTrendLocation = function(locations, callback) {
 
 /**
  * Caches the array of locations that have available trends.
- * @param {array} trendLocations - An array of TrendLocation objects
+ * @param {array} trendLocations - An array of Location objects
  **/
 var _cacheTrendLocations = function(trendLocations) {
 	redisClient.set(CacheKeys.Twitter.TRENDS_AVAILABLE, JSON.stringify(trendLocations));
 }
 
 /**
- * Creates an array of TrendLocation objects
+ * Creates an array of Location objects
  * @param {json} locations - an array of locations from the trends/available twitter API
  **/
 var _buildTrendLocationsArray = function(locations) {
 	var trendLocations = [];
 
 	locations.forEach(function(loc) {
-		trendLocations.push(new TrendLocation(loc));
+		trendLocations.push(new Location(loc));
 	});
 
 	return trendLocations;
