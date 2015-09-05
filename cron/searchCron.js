@@ -65,7 +65,7 @@ var _getTweets = function(locations, callback) {
 
 		if (loc) {
 
-			var params = {q: loc.name, result_type: 'popular', count: 10, lang: 'en'};
+			var params = {q: loc.name, result_type: 'mixed', count: 10, lang: 'en'};
 			console.log("Calling twitter client search tweets");
 			twitterClient.get('search/tweets', params, function(error, twts) {
 				if (!error) {
