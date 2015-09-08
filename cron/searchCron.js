@@ -18,14 +18,16 @@ redisClient.on('ready', function() {
 	startCrons();
 });
 
+var dateFormat = require('dateformat');
 
 function startCrons() {
 	searchTweetsCron();
 }
 
 function searchTweetsCron() {
-	new CronJob('00 32 19 * * *', function() {
-		console.log('Starting searchTweetsCron');
+	new CronJob('00 */15 * * * *', function() {
+		var now = new Date();
+		console.log('Starting searchTweetsCron at ' + dateFormat(now, "longTime"));
 		_searchTweets();
 	}, null, true, 'America/Los_Angeles');
 }
@@ -36,7 +38,7 @@ function searchTweetsCron() {
  */
 var _searchTweets = function() {
 	var locations = require('../fixtures/capitals.json');
-
+	console.log("Got Locations from require(): size " + locations.length);
 	_getTweets(locations, function(error, tweets) {
 		_cacheTweets(tweets);
 	});
@@ -55,8 +57,10 @@ var _getTweets = function(locations, callback) {
 
 	var twitterClient = new Twitter(credentialsConfig.twitter.credentials);
 
+	var index = 0;
+
 	var interval = setInterval(function() {
-		var loc = locations.shift();
+		var loc = locations[index];
 
 		if (loc) {
 
@@ -65,8 +69,8 @@ var _getTweets = function(locations, callback) {
 			twitterClient.get('search/tweets', params, function(error, twts) {
 				if (!error) {
 					if (twts.search_metadata.count > 0) {
-						var tweets = new Tweets(loc.lat, loc.lng, twts.statuses);
-						console.log("pushing tweets!!! ");
+						var tweets = new Tweets(loc.lat, loc.lng, twts);
+						//console.log("pushing tweets!!! ");
 						updatedTweets.push(tweets);
 					}
 
@@ -74,8 +78,12 @@ var _getTweets = function(locations, callback) {
 					console.log("THERE WAS AN ERROR!" + JSON.stringify(error));
 				}
 			});
+
+			index++;
 		} else {
-			console.log("DONE!");
+			console.log('Done at ' + dateFormat(now, "longTime") + " INDEX " + index);
+			index = 0;
+			var now = new Date();
 			clearInterval(interval);
 			callback(null, updatedTweets);
 		}
