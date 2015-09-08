@@ -61,7 +61,8 @@ function initialize() {
 	
 	var mapOptions = {
 	    zoom: 3,
-	    center: {lat: 25.1587734, lng: 0},
+       minZoom: 2,
+	    center: {lat: 0, lng: 0},
 	    styles: styles
 	};
 	   	
@@ -208,11 +209,19 @@ function drop(tweet, delay) {
 		var infoWindowContent = '<div class="iw-container">';
 		
 		for (var i = 0; i < tweet.tweets.length; i++) {
+         var t = tweet.tweets[i];
+
 			infoWindowContent += '<div class="iw-row">';
 			infoWindowContent += 	'<div class="iw-title">';
-			infoWindowContent +=		'<p>Armand Akopian</p>';
+         infoWindowContent +=       '<div>'
+         infoWindowContent +=          '<p class="full-name">' + t.fullName + '</p><p class="username">' + t.screenName + '</p>'
+         infoWindowContent +=       '</div>';
+			infoWindowContent +=		  '<div><img class="twitter-logo" src="/images/TwitterLogo_white.png"/></div>';
 			infoWindowContent += 	'</div>';
-			infoWindowContent += 	'<div class="iw-content"><p>' + tweet.tweets[i] + '</p></div>';
+			infoWindowContent += 	'<div class="iw-content">'
+         infoWindowContent +=       '<p>' + t.text + '</p>'
+         infoWindowContent +=       '<p style="color: #95999C;">' + t.timestamp + '</p>'
+         infoWindowContent +=    '</div>';
 			infoWindowContent += '</div>';
 		}
 		infoWindowContent += '<div class="iw-bottom-gradient"></div>';

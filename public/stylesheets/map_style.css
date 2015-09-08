@@ -1,5 +1,5 @@
 .iw-container {
-	max-height: 275px;
+	max-height: 300px;
 }
 
 .iw-container .iw-row {
@@ -7,8 +7,7 @@
 }
 
 .iw-container .iw-title {
-	height: 28px;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	padding: 10px 10px 5px;
 	color: white;
@@ -16,8 +15,33 @@
 	border-radius: 2px 2px 0 0;
 }
 
-.iw-title p {
-	margin: 0;
+.iw-title div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.iw-title .full-name {
+  margin-right: auto;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.iw-title .username {
+  font-size: 12px;
+  margin-right: auto;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+.iw-title .twitter-logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .iw-container .iw-content p {
