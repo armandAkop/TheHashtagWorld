@@ -24,7 +24,7 @@ var styles = [
 			{ visibility: "off" }
 		]
 	},
-	{
+	{  // Blue color of landscape
 		featureType: "landscape",
 		elementType: "geometry.fill",
 		stylers: [
@@ -36,7 +36,14 @@ var styles = [
 		stylers: [
 			{ visibility: "off" }
 		]
-	}
+	},
+   { // Removes datelines and equator line
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [
+         { "visibility": "off" }
+      ]
+   }
 ]
 
 /**
@@ -62,6 +69,7 @@ function initialize() {
 	var mapOptions = {
 	    zoom: 3,
        minZoom: 2,
+       disableDefaultUI: true,
 	    center: {lat: 0, lng: 0},
 	    styles: styles
 	};
@@ -161,7 +169,7 @@ function createMarkerFrom(tweet) {
 		position: latlng,
 		map: map,
 		animation: google.maps.Animation.DROP,
-		icon: '/images/twitter_icon.png',
+		icon: '/images/custom_marker.png',
 		title: 'Hello World'
 	});
 
