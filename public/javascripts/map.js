@@ -169,7 +169,8 @@ function createMarkerFrom(tweet) {
 		position: latlng,
 		map: map,
 		animation: google.maps.Animation.DROP,
-		icon: '/images/custom_marker.png'
+		icon: '/images/custom_marker.png',
+      title: tweet.name
 	});
 
 	return marker;
