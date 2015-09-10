@@ -7,18 +7,14 @@
 }
 
 .iw-container .iw-title {
+  display: flex;
+  justify-content: space-between;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 10px 10px 5px;
 	color: white;
-	background-color: #48b5e9;
+	background-color: #1F2B38;
 	border-radius: 2px 2px 0 0;
-}
-
-.iw-title div {
-  display: inline-block;
-  vertical-align: middle;
-  width: 50%;
 }
 
 .iw-title .full-name {
@@ -33,11 +29,40 @@
   margin-right: auto;
   margin-left: 0;
   margin-top: 0;
-  margin-bottom: 0; 
+  margin-bottom: 0;
+}
+
+.username:link {
+  color: white;
+  text-decoration: none;
+}
+
+.username:visited {
+  color: inherit;
+}
+
+.username:hover {
+  color: #CACFD2;
+}
+
+/* User info on the left side of title bar*/
+.iw-title .iw-title-left {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Text next to profile image*/
+.iw-title-left.text {
+  margin-left: 10px;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 36px;
+  height: 36px;
 }
 
 .iw-title .twitter-logo {
-  display: block;
   width: 32px;
   height: 32px;
   margin-left: auto;
@@ -50,6 +75,9 @@
 	padding: 10px 10px 15px;
 }
 
+.timestamp {
+  color: #95999C;
+}
 /* Need to override some of the google map info window css */
 .gm-style-iw {
    width: 350px !important;

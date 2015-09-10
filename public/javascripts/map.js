@@ -169,8 +169,7 @@ function createMarkerFrom(tweet) {
 		position: latlng,
 		map: map,
 		animation: google.maps.Animation.DROP,
-		icon: '/images/custom_marker.png',
-		title: 'Hello World'
+		icon: '/images/custom_marker.png'
 	});
 
 	return marker;
@@ -206,6 +205,7 @@ function batchAnimate(tweets) {
 		}
 	}
 }
+
 /**
  *	Creates a marker and drops it onto the map after a specified delay
  *	@param {object} tweet - the tweet object to create the marker from and drop on the map
@@ -218,20 +218,9 @@ function drop(tweet, delay) {
 		
 		for (var i = 0; i < tweet.tweets.length; i++) {
          var t = tweet.tweets[i];
-
-			infoWindowContent += '<div class="iw-row">';
-			infoWindowContent += 	'<div class="iw-title">';
-         infoWindowContent +=       '<div>'
-         infoWindowContent +=          '<p class="full-name">' + t.fullName + '</p><p class="username">' + t.screenName + '</p>'
-         infoWindowContent +=       '</div>';
-			infoWindowContent +=		  '<div><img class="twitter-logo" src="/images/TwitterLogo_white.png"/></div>';
-			infoWindowContent += 	'</div>';
-			infoWindowContent += 	'<div class="iw-content">'
-         infoWindowContent +=       '<p>' + t.text + '</p>'
-         infoWindowContent +=       '<p style="color: #95999C;">' + t.timestamp + '</p>'
-         infoWindowContent +=    '</div>';
-			infoWindowContent += '</div>';
+			infoWindowContent += createInfoWindowRow(t);
 		}
+
 		infoWindowContent += '<div class="iw-bottom-gradient"></div>';
 		infoWindowContent +='</div>';
 
@@ -245,6 +234,26 @@ function drop(tweet, delay) {
 	}, delay);
 }
 
-function createInfoWindow(params) {
+function createInfoWindowRow(t) {
+   var profileUrl = 'https://www.twitter.com/' + t.screenName;
 
+   var infoWindowContent = '<div class="iw-row">';
+   infoWindowContent +=    '<div class="iw-title">';
+   infoWindowContent +=      '<div>';
+   infoWindowContent +=       '<div class="iw-title-left">';
+   infoWindowContent +=        '<a target="_blank" href=\"' + profileUrl + '\"><img class="profile-image" src="' + t.profilePicture + '\"/></a>';
+   infoWindowContent +=       '</div>'
+   infoWindowContent +=       '<div class="iw-title-left text">'
+   infoWindowContent +=          '<p class="full-name">' + t.fullName + '</p><a class="username" target="_blank" href=\"' + profileUrl + '\">@' + t.screenName + '</a>';
+   infoWindowContent +=       '</div>';
+   infoWindowContent +=      '</div>';
+   infoWindowContent +=      '<div><img class="twitter-logo" src="/images/TwitterLogo_white.png"/></div>';
+   infoWindowContent +=    '</div>';
+   infoWindowContent +=    '<div class="iw-content">'
+   infoWindowContent +=       '<p>' + t.text + '</p>'
+   infoWindowContent +=       '<p class="timestamp">' + t.timestamp + '</p>'
+   infoWindowContent +=    '</div>';
+   infoWindowContent += '</div>';
+
+   return infoWindowContent;
 }
