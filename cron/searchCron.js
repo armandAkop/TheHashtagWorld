@@ -5,8 +5,6 @@ var credentialsConfig = require(path.join(__dirname, '../config/credentials', ap
 var CacheKeys = require('../lib/cache/cacheKeys');
 var Twitter = require('twitter');
 var redisClient = require('redis').createClient();
-var googleAPI = require('../lib/api/googleAPI');
-var Location = require('../lib/models/location');
 var Tweets = require('../lib/models/tweets');
 
 redisClient.on('error', function(err) {
@@ -68,22 +66,22 @@ var _getTweets = function(locations, callback) {
 			
 			twitterClient.get('search/tweets', params, function(error, twts) {
 				if (!error) {
-					if (twts.search_metadata.count > 0) {
-						var tweets = new Tweets(loc.lat, loc.lng, twts);
-						//console.log("pushing tweets!!! ");
+					if (twts.statuses.length > 0) {
+						var tweets = new Tweets(loc.lat, loc.lng, loc.name, twts);
 						updatedTweets.push(tweets);
 					}
 
-				} else {
+				} else if (error.status == 403) { // Rate limit hit, stop try
+					clearInterval(interval);
 					console.log("THERE WAS AN ERROR!" + JSON.stringify(error));
 				}
 			});
 
 			index++;
 		} else {
+			var now = new Date();
 			console.log('Done at ' + dateFormat(now, "longTime") + " INDEX " + index);
 			index = 0;
-			var now = new Date();
 			clearInterval(interval);
 			callback(null, updatedTweets);
 		}
