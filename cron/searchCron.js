@@ -61,8 +61,10 @@ var _getTweets = function(locations, callback) {
 		var loc = locations[index];
 
 		if (loc) {
+			// Make sure to exclude retweets
+			var query = loc.name + "-filter:retweets";
 
-			var params = {q: loc.name, result_type: 'mixed', count: 10, lang: 'en'};
+			var params = {q: query, result_type: 'mixed', count: 10, lang: 'en'};
 			
 			twitterClient.get('search/tweets', params, function(error, twts) {
 				if (!error) {
