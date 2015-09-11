@@ -17,7 +17,7 @@ var app = express();
 app.set('port', app.get('port') || 3000);
 
 // Default node env
-process.env.NODE_ENV = app.get('env');
+process.env.NODE_ENV = app.get('env') || 'development';
 
 // view engine setup
 app.set('views', path.join(__dirname, '/lib/views'));
@@ -35,10 +35,10 @@ app.use(compress());
 app.use('/', homepageRoutes);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, callback) {
+app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
-  callback(err);
+  next(err);
 });
 
 // error handlers
@@ -46,7 +46,7 @@ app.use(function(req, res, callback) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, callback) {
+  app.use(function(err, req, res, next) {
     console.log("In app.js dev, error");
     res.status(err.status || 500);
     res.render('error', {
@@ -58,7 +58,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, callback) {
+app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
