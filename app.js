@@ -13,9 +13,6 @@ require('./cron/searchCron');
 
 var app = express();
 
-// Port info
-app.set('port', app.get('port') || 3000);
-
 // Default node env
 process.env.NODE_ENV = app.get('env') || 'development';
 
@@ -47,9 +44,8 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
-    console.log("In app.js dev, error");
     res.status(err.status || 500);
-    res.render('error', {
+    res.render('error' + err.status, {
       message: err.message,
       error: err
     });
@@ -59,8 +55,15 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
+  var errorPage = 'error';
+  if (err.status == 404) {
+    errorPage = 'error404';
+  } else if (err.status == 500) {
+    errorPage = 'error500';
+  }
+
   res.status(err.status || 500);
-  res.render('error', {
+  res.render(errorPage, {
     message: err.message,
     error: {}
   });
