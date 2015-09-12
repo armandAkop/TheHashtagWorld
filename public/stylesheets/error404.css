@@ -1,0 +1,14 @@
+body {
+	background-color: #f1edec;
+}
+
+.error-text {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+.smiley-wrapper {
+	text-align: center;
+}
