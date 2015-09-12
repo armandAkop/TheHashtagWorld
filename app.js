@@ -45,7 +45,7 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error' + err.status, {
+    res.render('error', {
       message: err.message,
       error: err
     });
@@ -55,18 +55,15 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  var errorPage = 'error';
+  // Default to 500 page
+  var errorPage = 'error500';
+  
   if (err.status == 404) {
     errorPage = 'error404';
-  } else if (err.status == 500) {
-    errorPage = 'error500';
-  }
+  } 
 
   res.status(err.status || 500);
-  res.render(errorPage, {
-    message: err.message,
-    error: {}
-  });
+  res.render(errorPage);
 });
 
 
