@@ -36,7 +36,6 @@ function searchTweetsCron() {
  */
 var _searchTweets = function() {
 	var locations = require('../fixtures/capitals.json');
-	console.log("Got Locations from require(): size " + locations.length);
 	_getTweets(locations, function(error, tweets) {
 		_cacheTweets(tweets);
 	});
@@ -83,6 +82,7 @@ var _getTweets = function(locations, callback) {
 		} else {
 			var now = new Date();
 			console.log('Done at ' + dateFormat(now, "longTime") + " INDEX " + index);
+			
 			index = 0;
 			clearInterval(interval);
 			callback(null, updatedTweets);
@@ -105,20 +105,4 @@ var _cacheTweets = function(tweets) {
  **/
 var _cacheTrendLocations = function(locations) {
 	redisClient.set(CacheKeys.Twitter.TRENDS_AVAILABLE, JSON.stringify(locations));
-}
-
-
-/**
- * Filters the locations by the specified array of types.
- * @param {json} locations - An location objects
- * @param {array} types - An string array of location types such as 'Town' or 'Country'
- * @return {array} locs - An array of location objects filtered by the types
- **/
-var _filterByLocationType = function(locations, types) {
-
-	var locs = locations.filter(function(loc) {
-		return types.indexOf(loc.placeType.name) > -1;
-	});
-
-	return locs;
 }
