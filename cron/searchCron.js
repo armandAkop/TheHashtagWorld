@@ -52,7 +52,14 @@ var _getTweets = function(locations, callback) {
 	var ONE_SECOND_DELAY = 1000;
 	var updatedTweets = []
 
-	var twitterClient = new Twitter(credentialsConfig.twitter.credentials);
+	var env = process.env;
+	var twitterCreds = {
+		"consumer_key": env.twitter:consumer_key,
+		"consumer_secret": env.twitter:consumer_secret,
+		"bearer_token": env.twitter:bearer_token
+	}
+	
+	var twitterClient = new Twitter(twitterCreds);
 
 	var index = 0;
 
