@@ -1,7 +1,7 @@
 var CronJob = require('cron').CronJob;
 var CacheKeys = require('../lib/cache/cacheKeys');
 var Twitter = require('twitter');
-var redisClient = require('redis').createClient();
+var redisClient = require('redis').createClient(process.env.REDIS_URL);
 var Tweets = require('../lib/models/tweets');
 
 redisClient.on('error', function(err) {
