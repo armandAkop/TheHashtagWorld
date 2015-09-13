@@ -1,7 +1,4 @@
 var CronJob = require('cron').CronJob;
-var app = require('express')();
-var path = require('path');
-var credentialsConfig = require(path.join(__dirname, '../config/credentials', app.get('env') + '.json'));
 var CacheKeys = require('../lib/cache/cacheKeys');
 var Twitter = require('twitter');
 var redisClient = require('redis').createClient();
@@ -53,12 +50,13 @@ var _getTweets = function(locations, callback) {
 	var updatedTweets = []
 
 	var env = process.env;
-	var twitterCreds = {
-		"consumer_key": env.twitter:consumer_key,
-		"consumer_secret": env.twitter:consumer_secret,
-		"bearer_token": env.twitter:bearer_token
-	}
 	
+	var twitterCreds = {
+		"consumer_key": env.TWITTER_CONSUMER_KEY,
+		"consumer_secret": env.TWITTER_CONSUMER_SECRET,
+		"bearer_token": env.TWITTER_BEARER_TOKEN
+	}
+
 	var twitterClient = new Twitter(twitterCreds);
 
 	var index = 0;

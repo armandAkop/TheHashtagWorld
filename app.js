@@ -7,14 +7,10 @@ var bodyParser = require('body-parser');
 var compress = require('compression');
 
 var homepageRoutes = require('./lib/routes/index');
-
 // Immediately start crons
 require('./cron/searchCron');
 
 var app = express();
-
-// Default node env
-process.env.NODE_ENV = app.get('env') || 'development';
 
 // view engine setup
 app.set('views', path.join(__dirname, '/lib/views'));
