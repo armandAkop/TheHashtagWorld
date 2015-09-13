@@ -181,7 +181,7 @@ function createMarkerFrom(tweet) {
  */
 function getTweets() {
 	$.ajax({
-		url: 'http://localhost:3000/tweets'
+		url: '/tweets'
 	}).done(function(tweets) {
 		batchAnimate(tweets);
 	});
