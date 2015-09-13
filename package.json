@@ -1,6 +1,6 @@
 {
-  "name": "sampleApp",
-  "version": "0.0.0",
+  "name": "the-hashtag-world",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
