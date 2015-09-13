@@ -7,6 +7,9 @@
 }
 
 .iw-container .iw-title {
+  display: -webkit-flex; /* Safar */
+  -webkit-justify-content: space-between; /* Safari 6.1+ */
+  
   display: flex;
   justify-content: space-between;
 	font-size: 16px;
