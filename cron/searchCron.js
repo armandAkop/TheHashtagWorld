@@ -1,11 +1,18 @@
 var CronJob = require('cron').CronJob;
 var CacheKeys = require('../lib/cache/cacheKeys');
 var Twitter = require('twitter');
-var redisClient = require('redis').createClient(process.env.REDIS_URL);
 var Tweets = require('../lib/models/tweets');
 
+
+var url = require('url');
+var redisUrl = url.parse(process.env.REDIS_URL);
+
+var redisClient = require('redis').createClient(redisUrl.port, redisUrl.hostname);
+redisClient.auth(redisUrl.auth.split(":")[1]);
+
+
 redisClient.on('error', function(err) {
-	console.log("errror connecting to cron redis: " + err.message);
+	console.error("errror connecting to cron redis: " + err.message);
 });
 
 redisClient.on('ready', function() {
