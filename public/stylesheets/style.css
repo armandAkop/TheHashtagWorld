@@ -5,15 +5,16 @@ html, body {
 }
 
 #map-canvas {
-	width: 100%;
 	height: 100%;
+	width: auto;
 	margin: 0;
 	padding: 0;
 }
 
 .nav-wrapper {
 	background-color: #2c503e;
-	width: 100%;
+	width: auto;
+	margin: 0;
 	padding: 12px;
 	color: white;
 	font-size: 18px;
