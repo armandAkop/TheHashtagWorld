@@ -8,7 +8,7 @@ var compress = require('compression');
 
 var homepageRoutes = require('./lib/routes/index');
 // Immediately start crons
-require('./cron/searchCron');
+//require('./cron/searchCron');
 
 var app = express();
 process.env.PORT = process.env.PORT || 5000;
